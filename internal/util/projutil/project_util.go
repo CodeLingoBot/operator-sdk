@@ -71,7 +71,7 @@ func CheckGoProjectCmd(cmd *cobra.Command) error {
 	switch t {
 	case OperatorTypeGo:
 	default:
-		return fmt.Errorf("'%s' can only be run for Go operators; %s does not exist.", cmd.CommandPath(), mainFile)
+		return fmt.Errorf("'%s' can only be run for Go operators; %s does not exist", cmd.CommandPath(), mainFile)
 	}
 	return nil
 }
